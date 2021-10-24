@@ -1,0 +1,23 @@
+{
+  "name": "pollwatcher",
+  "version": "0.1.0",
+  "description": "Poll for arbitrary asynchronous things",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "exit 0",
+    "build": "exit 0",
+    "prettier": "exit 0",
+    "prepublish": "exit 0"
+  },
+  "author": "Chester Carmer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chestercharles/pollwatcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chestercharles/pollwatcher/issues"
+  },
+  "homepage": "https://github.com/chestercharles/pollwatcher#readme"
+}
