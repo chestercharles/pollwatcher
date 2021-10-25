@@ -42,6 +42,11 @@ class PollWatcher {
 }
 
 async function resolveOnValueChanged(poll, pollingInterval, shortCircuit) {
+  const shouldResolveImmediately = await poll.hasValueChanged();
+  if (shouldResolveImmediately) {
+    return poll.currentValue;
+  }
+
   return new Promise((resolve) => {
     const interval = setInterval(async () => {
       const valueHasChanged = await poll.hasValueChanged();
